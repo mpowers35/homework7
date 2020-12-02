@@ -35,7 +35,6 @@ function gettingJSON(){
     let loc = document.querySelector("#loc");
     let temp = document.querySelector("#temp");
     let tempImg = document.querySelector("#tempImg");
-    let descrip = document.querySelector("#descrip");
 
     // Your code here.
     
@@ -49,7 +48,6 @@ function gettingJSON(){
         console.log(json)
         loc.innerHTML = json["name"]
         temp.innerHTML = json["main"]["temp"]
-        descrip.innerHTML = json["weather"][0]["description"]
         tempImg.src = "http://openweathermap.org/img/wn/" + json["weather"][0]["icon"] + ".png"
         tempImg.alt = "Image of Weather"
 
